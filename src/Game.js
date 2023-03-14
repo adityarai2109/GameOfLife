@@ -9,28 +9,28 @@ export default function Game(props) {
 	};
 
 	return (
-		<div
-			className="grid1"
-			style={{
-				display: "grid",
-				width: "10rem",
-				gridTemplateColumns: `repeat(${props.n},1fr)`,
-				gridTemplateRows: `repeat(${props.n},1fr)`,
-			}}
-		>
-			{props.grid.map((row, i) =>
-				row.map((cell, j) => (
-					<button
-						onClick={() => {
-							handleClick(i, j);
-						}}
-						className={cell === 1 ? "clicked" : "unclicked"}
-						style={{ height: "40px", width: "40px" }}
-					>
-						{cell}
-					</button>
-				))
-			)}
-		</div>
+		<>
+			<div
+				className="grid1"
+				style={{
+					gridTemplateColumns: `repeat(${props.n},1fr)`,
+					gridTemplateRows: `repeat(${props.n},1fr)`,
+				}}
+			>
+				{props.grid.map((row, i) =>
+					row.map((cell, j) => (
+						<button
+							onClick={() => {
+								handleClick(i, j);
+							}}
+							className={cell === 1 ? "clicked" : "unclicked"}
+							style={{ height: "40px", width: "40px" }}
+						>
+							{cell}
+						</button>
+					))
+				)}
+			</div>
+		</>
 	);
 }

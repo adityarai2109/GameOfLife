@@ -1,3 +1,8 @@
+body {
+	color: white;
+	background-color: black;
+}
+
 .clicked {
 	background-color: yellow;
 	color: black;
@@ -7,9 +12,55 @@
 	background: black;
 	color: white;
 }
-
-.App {
-	display: flex;
-	justify-content: space-around;
+.grid1 {
+	display: grid;
+	width: "60vw";
 	align-items: center;
+	justify-content: space-around;
+}
+
+.nav {
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	background-color: black;
+	align-items: center;
+	border-bottom: 1px solid white;
+}
+
+.left-nav {
+	margin-left: 1rem;
+}
+
+.right-nav {
+	margin-right: 1rem;
+}
+
+.right-nav > * {
+	margin: 1rem;
+	border-radius: 3px;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	background-color: white;
+}
+
+.Simulation {
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.controls {
+	display: flex;
+	flex-direction: column;
+}
+
+.controls > * {
+	margin: 1rem;
+	width: 5rem;
+}
+
+button {
+	padding: 0.5rem;
 }

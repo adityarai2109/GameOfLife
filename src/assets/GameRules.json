@@ -1,0 +1,22 @@
+[
+	{
+		"text": "Any live cell with fewer than two live neighbours dies, as if by underpopulation.",
+		"i1": "R1A",
+		"R1B": "R1B"
+	},
+	{
+		"text": "Any live cell with two or three live neighbours lives on to the next generation.",
+		"R2A": "R2A",
+		"R2B": "R2B"
+	},
+	{
+		"text": "Any live cell with more than three live neighbours dies, as if by overpopulation.",
+		"R3A": "R3A",
+		"R3B": "R3B"
+	},
+	{
+		"text": "Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.",
+		"R4A": "R4A",
+		"R4B": "R4B"
+	}
+]
